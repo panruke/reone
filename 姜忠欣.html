@@ -7,53 +7,37 @@
     <title>Document</title>
 </head>
 <style>
-
-     body{
-        height: 100vh; 
-        margin: 0;
-        background-color: #eee;
+    h1{
+        color:red;
+    font-size:30px;
+    text-align:center;
     }
-    *{
-        border: 1px solid black;
+    input{
+        box-shadow: 5px 5px 5px #eee;
+        width: 200px;
+        height: 30px;
     }
-    .flex{
-        display: flex;
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: aquamarine;
     }
-    .column{
-        flex-direction: column;
+    button:active{
+        background-color: rgb(29, 175, 127);
+        transform: translateY(2px);
     }
-    .white{
-        background-color: white;
-    }
-    .mart{
-        margin-top: 8px;
-    }
-    .marl{
-        margin-left: 8px;
-    }
-    .marr{
-        margin-right: 8px;
-    }
-    .flex1{
-        flex:1;
-    }
-    .mar{
-        margin: 8px;
-    }
-    .sd{
-        box-shadow:5px 5px 5px #888888;
-    }
-    .xiaosi::-webkit-scrollbar{
-        display: none;
-    }
-  .h1{
-    color:red;
-    font-size:40px;
-    text-align:centen;
-  }
-    
 </style>
 <body>
-  <h1>我叫姜忠欣，我是大傻逼！</h1>
+    <h1>我叫姜忠欣，我是<span id="one"></span></h1>
+    <input type="text" id="ct" value="大傻逼">
+    <button onclick="add()">确定</bUtton>
+<script>
+    var val= document.getElementById("one");
+
+    function add(){
+        val.innerHTML = document.getElementById("ct").value;
+
+    }
+</script>
 </body>
 </html>
