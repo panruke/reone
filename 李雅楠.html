@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color:red;
+    font-size:30px;
+    text-align:center;
+    }
+    input{
+        box-shadow: 5px 5px 5px #eee;
+        width: 200px;
+        height: 30px;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        background-color: aquamarine;
+    }
+    button:active{
+        background-color: rgb(29, 175, 127);
+        transform: translateY(2px);
+    }
+</style>
+<body>
+    <h1>我叫李雅楠，我是<span id="one"></span></h1>
+    <input type="text" id="ct" value="大傻逼">
+    <button onclick="add()">确定</bUtton>
+<script>
+    var val= document.getElementById("one");
+
+    function add(){
+        val.innerHTML = document.getElementById("ct").value;
+
+    }
+</script>
+</body>
+</html>
